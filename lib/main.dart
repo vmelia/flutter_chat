@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'exports/pages.dart';
 import 'exports/theme.dart';
 
-void main() {
+void main() =>
   runApp(const MainApp());
-}
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -15,7 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: mainBackgroundColour),
-      home: const MainScaffoldWidget(title: 'Flutter UI', body: HomePage()),
+      home: const MainScaffoldWidget(title: 'Chat', body: HomePage()),
     );
   }
 }

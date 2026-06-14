@@ -9,20 +9,17 @@ class PanelWidget extends StatelessWidget {
     required this.title,
     required this.text,
     required this.label,
-    required this.iconDataEnabled,
-    required this.iconDataDisabled,
+    required this.iconData,
     required this.onPressed,
   });
   final String title;
   final String text;
   final String label;
-  final IconData iconDataEnabled;
-  final IconData iconDataDisabled;
+  final IconData iconData;
   final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
-    final iconData = onPressed != null ? iconDataEnabled : iconDataDisabled;
     return Expanded(
       child: Container(
         decoration: BoxDecoration(
